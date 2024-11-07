@@ -6,6 +6,70 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div id="content"></div>
+    <div id="content">
+      <div id="navbar">
+        <a href="#" class="logo"><i class="fas fa-meteor"></i> Wthr</a>
+        <form class="search" action="#" method="get">
+          <input
+            class="search-input"
+            type="search"
+            name=""
+            id=""
+            placeholder="Search location"
+            autocomplete="off"
+          /><button class="search-submit submit" type="submit">
+            <i class="fas fa-search submit"></i>
+          </button>
+        </form>
+      </div>
+      <div id="main">
+        <div class="main-header">
+          <h2>
+            <span class="data-city"></span> Amsterdam,
+            <span class="data-country"></span>Netherlands
+          </h2>
+          <p class="data-location-details">Friday</p>
+        </div>
+        <div class="main-section">
+          <div class="main-weather">
+            <h1>32</h1>
+            <div class="data-temp"></div>
+            <div class="data-temp-desc"></div>
+          </div>
+          <div class="main-info">
+            <div class="data-info">
+              <div class="data-info-min-temp">
+                <h3>Min. Temperature</h3>
+              </div>
+              <div class="data-info-max-temp">
+                <h3>Max. Temperature</h3>
+              </div>
+              <div class="data-info-humidity">
+                <h3>Humidity</h3>
+              </div>
+              <div class="data-info-sunrise">
+                <h3>Sunrise</h3>
+              </div>
+              <div class="data-info-sunset">
+                <h3>Sunset</h3>
+              </div>
+              <div class="data-info-uv-index">
+                <h3>UV Index</h3>
+              </div>
+              <div class="data-info-pressure">
+                <h3>Pressure</h3>
+              </div>
+              <div class="data-info-wind-direction">
+                <h3>Wind Direction</h3>
+              </div>
+              <div class="data-info-wind-speed">
+                <h3>Wind Speed</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="forecast"></div>
+    </div>
   </body>
 </html>
