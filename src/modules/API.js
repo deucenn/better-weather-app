@@ -3,7 +3,7 @@ const today = new Date().toISOString().split("T")[0];
 // TODO: hide API key
 const key = "7H4V8WCPUESCS4VBH4K7LDZF8";
 
-export default function ApiCall(location) {
+export default function callWeatherApi (location) {
   async function getLocalData() {
     try {
       const response = await fetch(
@@ -57,7 +57,7 @@ export default function ApiCall(location) {
 }
 
 // Just for testing purposes
-const getWeatherData = ApiCall("Amsterdam"); 
-getWeatherData().then(data => {
-  console.log(data); 
-});
+// const getWeatherData = callWeatherApi("Amsterdam"); 
+// getWeatherData().then(data => {
+//   console.log(data); 
+// });
