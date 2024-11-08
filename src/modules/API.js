@@ -22,6 +22,7 @@ export default function callWeatherApi (location) {
           latitude: locationData.latitude,
           longitude: locationData.longitude,
           temp: locationData.days[0].temp,
+          icon: locationData.days[0].icon,
           tempDescription: locationData.description,
           tempMin: locationData.days[0].tempmin,
           tempMax: locationData.days[0].tempmax,
@@ -37,9 +38,11 @@ export default function callWeatherApi (location) {
           tomorrowMaxTemp: locationData.days[1] ? locationData.days[1].tempmax : "N/A",
           tomorrowMinTemp: locationData.days[1] ? locationData.days[1].tempmin : "N/A",
           tomorrowConditions: locationData.days[1] ? locationData.days[1].conditions : "N/A",
+          tomorrowIcon: locationData.days[1] ? locationData.days[1].icon : "NA",
           overtomorrowMaxTemp: locationData.days[2] ? locationData.days[2].tempmax : "N/A",
           overtomorrowMinTemp: locationData.days[2] ? locationData.days[2].tempmin : "N/A",
           overtomorrowConditions: locationData.days[2] ? locationData.days[2].conditions : "N/A",
+          overtomorrowIcon: locationData.days[2] ? locationData.days[2].icon : "NA",
         };
 
         return processedData; 
