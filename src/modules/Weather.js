@@ -90,6 +90,8 @@ function updateWeatherUI(data) {
   overtomorrowMinTemp.innerHTML = `${FahrenheitToCelsius(
     data.overtomorrowMinTemp
   )}°C`;
+
+  locationInput.value = "";
 }
 
 export default function Weather() {
